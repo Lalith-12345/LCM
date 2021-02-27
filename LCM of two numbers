@@ -1,0 +1,22 @@
+#include <stdio.h>
+main()
+{
+  int a=0,b=0,low=0,lcm=0;
+  printf("Enter the two numbers :");
+  scanf("%d%d",&a,&b);
+  
+  low=(a<b)?a:b;
+  
+  while(2)
+  {
+    if(low%a==0 && low%b==0)
+    {
+      lcm =low;
+      break;
+      
+    }
+    low++;
+  }
+  printf("The LCM of %d and %d is %d\n",a,b,lcm);
+  return 0;
+}
